@@ -1,27 +1,34 @@
-import React from 'react'
-import ProfileBar from './components/ProfileBar';
-import {Route, Routes} from 'react-router-dom';
-import Contact from './pages/Contact';
-import ListPage from './pages/ListPage';
-import ProfilePage from './pages/ProfilePage';
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Header from '../src/components/Header'
+import Hero from '../src/components/Hero'
+import Process from '../src/components/Process'
+import Features from '../src/components/Features'
+import CtaInfolettre from './components/CtaInfolettre'
+import Footer from './components/Footer'
+import Advantages from './components/Advantages'
+import Banner from './components/Banner'
+import Setup from './components/Setup'
+import Teams from './components/Teams'
 
 
-const App = () => (
-    <div className="bg-white w-full overflow-hidden">
-      
-      <div ClassName="App text-white">
-      
-      <ProfileBar/>
-      <Routes>
-        <Route path="/" element={<ListPage/>} />
-        <Route path="/Contact" element={<Contact/>} />
-        <Route path="/ProfilePage" element={<ProfilePage/>} />
-      </Routes>
-      
-      
+function App() {
+  return(
+    <div className='backgroundpattern'>
+    <Header/>
+    <Hero/>
+    <Banner/>
+    <Features/>
+    <Setup/>
+    <Advantages/>
+    <CtaInfolettre/>
+    <Teams/>
+    <Footer/>
+    test page
     </div>
-  
-    </div>
-  );
+  )
+}
+
 export default App
-
