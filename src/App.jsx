@@ -26,7 +26,6 @@ function App() {
     <CtaInfolettre/>
     <Teams/>
     <Footer/>
-    test page
     </div>
   )
 }
